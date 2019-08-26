@@ -402,12 +402,22 @@ footer div p {
 .aboutUs img {
   border-radius: 1rem;
 }
+.aboutUs img:hover {
+  border: 3px solid #CC6666;
+  transition: transform(3s) ease-in-out;
+  transform: scale(1.8);
+}
 .aboutUs p {
   line-height: 1.8rem;
 }
 @media (max-width: 800px) {
   .aboutUs .team {
     width: 45%;
+  }
+  .aboutUs img:hover {
+    border: 3px solid #CC6666;
+    transition: transform(3s) ease-in-out;
+    transform: scale(1.4);
   }
 }
 @media (max-width: 610px) {
@@ -419,6 +429,11 @@ footer div p {
   .aboutUs .team {
     width: auto;
     max-width: 90%;
+  }
+  .aboutUs img:hover {
+    border: 3px solid #CC6666;
+    transition: transform(3s) ease-in-out;
+    transform: scale(1.3);
   }
 }
 .feature-list {
