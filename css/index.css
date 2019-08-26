@@ -216,7 +216,7 @@ header section a:hover {
 header section .navLeft {
   margin-right: 5%;
 }
-@media (max-width: 790px) {
+@media (max-width: 800px) {
   header section {
     max-width: 790px;
     flex-direction: column;
@@ -266,6 +266,10 @@ header section .navLeft {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+}
+.text-and-login h2 {
+  font-size: 2.9rem;
+  padding-bottom: 10px;
 }
 .text-and-login .login-area {
   display: flex;
@@ -322,6 +326,7 @@ header section .navLeft {
 .content-pick2 {
   padding-top: 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .content-pick .options,
@@ -339,6 +344,12 @@ header section .navLeft {
 .content-pick img,
 .content-pick2 img {
   border-radius: 1rem;
+}
+@media (max-width: 800px) {
+  .content-pick .options,
+  .content-pick2 .options {
+    width: 48%;
+  }
 }
 @media (max-width: 610px) {
   .content-pick,
@@ -407,6 +418,11 @@ footer div p {
 }
 .aboutUs p {
   line-height: 1.8rem;
+}
+@media (max-width: 800px) {
+  .aboutUs .team {
+    width: 45%;
+  }
 }
 @media (max-width: 610px) {
   .aboutUs {
