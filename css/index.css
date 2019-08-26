@@ -176,10 +176,8 @@ colorTest {
   color: #CC6666;
   color: #993366;
 }
-body {
-  background-color: #FFCC99;
-}
 header {
+  background-color: #FFCC99;
   border-bottom: 2px dashed silver;
 }
 header section {

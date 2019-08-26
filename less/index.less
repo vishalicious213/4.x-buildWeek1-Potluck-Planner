@@ -102,19 +102,18 @@ table {
 @mobile: ~"(max-width: 610px)";
 @tablet: ~"(max-width: 800px)";
 
-colorTest {
-    color: #FFCC99;
-    color: #FF9966;
-    color: #CC6666;
-    color: #993366;
-}
+@headerColor: #FFCC99;
+@cardColor: #FF9966;
+@footerColor: #993366;
+@gradientColor: #FFCC99, #993366;
 
-body {
-    background-color: #FFCC99;
-    // background-color: #993366;
+colorTest {
+    color: #FFCC99;    color: #FF9966;
+    color: #CC6666;    color: #993366;
 }
 
 header {
+    background-color: @headerColor;
     border-bottom: 2px dashed silver;
     // border-bottom: 2px dashed #CC6666;
 
@@ -203,17 +202,17 @@ header {
 }// header
 
 .gradientSection {
-        background-image: linear-gradient(#FFCC99, #993366);
+        background-image: linear-gradient(@gradientColor);
         // background-image: linear-gradient(#993366, #FFCC99);
 }
 
 .top-area {
     margin: 0px auto 10px auto;
-  
+
     h2 {
-      margin-top: 20px;
+        margin-top: 20px;
     }
-  
+
     img {
         border-radius: 1rem;
         width: 100%
@@ -222,7 +221,7 @@ header {
     @media @mobile {
         margin-bottom: 0px;
     }
-  }//.top-area
+}//.top-area
 
 .text-and-login {
     display: flex;
@@ -233,7 +232,7 @@ header {
     h2 {
         font-size: 2.9rem;
         padding-bottom: 10px;
-      }
+    }
 
     .login-area {
         display: flex;
@@ -310,7 +309,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #FF9966;
+        background-color: @cardColor;
         padding: 2rem;
         border-radius: 1rem;
         border: 3px solid #CC6666;
@@ -344,7 +343,7 @@ header {
 footer {
     padding-bottom: 3rem;
     padding-top: 2rem;
-    background-color: #993366;
+    background-color: @footerColor;
     // background-color: #FFCC99;
     
     div {
@@ -371,7 +370,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #FF9966;
+        background-color: @cardColor;
         padding: 2rem;
         margin: 1rem;
         border-radius: 1rem;
@@ -390,8 +389,8 @@ footer {
             a:hover {
                 color: #993366;
             }
-        }
-    }
+        }// .details
+    }// .team
 
     img {
         border-radius: 1rem;
@@ -417,7 +416,7 @@ footer {
             transition: transform(5s) ease-in-out;
             transform: scale(1.4);
         }
-    }
+    }// @media @tablet
 
     @media @mobile {
         //   background-color: #993366;
@@ -435,7 +434,7 @@ footer {
             transition: transform(5s) ease-in-out;
             transform: scale(1.3);
         }
-    }//@media
+    }//@media @ mobile
 
 }// .aboutUs
 
@@ -453,7 +452,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #FF9966;
+        background-color: @cardColor;
         padding: 2rem;
         margin: 1rem;
         border-radius: 1rem;
@@ -484,6 +483,6 @@ footer {
             width: auto;
             max-width: 90%;
         }
-    }// @media
+    }// @media @mobile
 
 }// .feature-list
