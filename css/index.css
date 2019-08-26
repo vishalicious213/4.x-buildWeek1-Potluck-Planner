@@ -421,3 +421,43 @@ footer div p {
     max-width: 90%;
   }
 }
+.feature-list {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature-list .feature {
+  width: 45%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FF9966;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 3px solid #CC6666;
+}
+.feature-list img {
+  border-radius: 1rem;
+}
+.feature-list p {
+  line-height: 1.8rem;
+}
+@media (max-width: 800px) {
+  .feature-list .feature {
+    width: 45%;
+  }
+}
+@media (max-width: 610px) {
+  .feature-list {
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-list .feature {
+    width: auto;
+    max-width: 90%;
+  }
+}
