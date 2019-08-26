@@ -404,7 +404,7 @@ footer div p {
 }
 .aboutUs img:hover {
   border: 3px solid #CC6666;
-  transition: transform(3s) ease-in-out;
+  transition: transform(5s) ease-in-out;
   transform: scale(1.8);
 }
 .aboutUs p {
@@ -416,7 +416,7 @@ footer div p {
   }
   .aboutUs img:hover {
     border: 3px solid #CC6666;
-    transition: transform(3s) ease-in-out;
+    transition: transform(5s) ease-in-out;
     transform: scale(1.4);
   }
 }
@@ -432,7 +432,7 @@ footer div p {
   }
   .aboutUs img:hover {
     border: 3px solid #CC6666;
-    transition: transform(3s) ease-in-out;
+    transition: transform(5s) ease-in-out;
     transform: scale(1.3);
   }
 }
