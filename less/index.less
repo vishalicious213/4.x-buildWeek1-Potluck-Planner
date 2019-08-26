@@ -420,3 +420,52 @@ footer {
     }//@media
 
 }// .aboutUs
+
+// -------------------- FEATURES PAGE
+
+.feature-list {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .feature {
+        width: 45%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #FF9966;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        border: 3px solid #CC6666;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+
+    p {
+        line-height: 1.8rem;
+    }
+
+    @media @tablet {
+        .feature {
+            width: 45%;
+        }
+    }
+
+    @media @mobile {
+        //   background-color: #993366;
+        border-radius: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+        .feature {
+            width: auto;
+            max-width: 90%;
+        }
+    }// @media
+
+}// .feature-list
