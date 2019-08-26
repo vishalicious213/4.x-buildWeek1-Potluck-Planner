@@ -375,16 +375,13 @@ footer div p {
 .header2 {
   background-color: #993366;
 }
-.gradientAboutSection {
-  background-image: linear-gradient(#FFCC99, #993366);
-}
 .aboutUs {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.aboutUs .options {
+.aboutUs .team {
   width: 48%;
   margin-bottom: 30px;
   display: flex;
@@ -394,6 +391,18 @@ footer div p {
   padding: 2rem;
   border-radius: 1rem;
   border: 3px solid #CC6666;
+}
+.aboutUs .team .details {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUs .team .details a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+.aboutUs .team .details a:hover {
+  color: #993366;
 }
 .aboutUs img {
   border-radius: 1rem;
@@ -407,7 +416,7 @@ footer div p {
     flex-direction: column;
     align-items: center;
   }
-  .aboutUs .options {
+  .aboutUs .team {
     width: auto;
     max-width: 90%;
   }
