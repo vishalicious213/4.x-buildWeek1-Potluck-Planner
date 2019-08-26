@@ -102,23 +102,6 @@ table {
 @mobile: ~"(max-width: 610px)";
 @tablet: ~"(max-width: 790px)";
 
-/*
-// Color assignments 
-@font-color: @shark;
-@button-bg: @eastern-blue;
-@main-bg:  @white;
-@navigation-border: @silver;
-@footer-bg: @sandy-beach;
-
-// Colors
-@white: #FFFFFF;
-@silver: #C0C0C0;
-@shark: #212529;
-@eastern-blue: #17A2B8;
-@sandy-beach: #FFEBCD;
-*/
-
-
 colorTest {
     color: #FFCC99;
     color: #FF9966;
@@ -310,8 +293,6 @@ header {
 }// .text-and-login
 
 
-
-
   .content-pick, .content-pick2 {
     padding-top: 30px;
     display: flex;
@@ -370,3 +351,55 @@ footer {
         }// p
     }// div
 }// footer
+
+// -------------------- ABOUT PAGE
+
+.header2 {
+    // background-color: #FFCC99;
+    background-color: #993366;
+}
+
+.gradientAboutSection {
+    background-image: linear-gradient(#FFCC99, #993366);
+    // background-image: linear-gradient(#993366, #FFCC99);
+}
+
+.aboutUs {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .options {
+        width: 48%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #FF9966;
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 3px solid #CC6666;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+
+    p {
+        line-height: 1.8rem;
+    }
+
+    @media @mobile {
+        //   background-color: #993366;
+        border-radius: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+        .options {
+            width: auto;
+            max-width: 90%;
+        }
+    }//@media
+
+  }// .aboutUs

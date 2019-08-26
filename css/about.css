@@ -177,7 +177,7 @@ colorTest {
   color: #993366;
 }
 body {
-  background-color: #FFCC99;
+  background-color: #993366;
 }
 header {
   border-bottom: 2px dashed silver;
@@ -245,7 +245,7 @@ header section .navLeft {
   }
 }
 .gradientSection {
-  background-image: linear-gradient(#FFCC99, #993366);
+  background-image: linear-gradient(#993366, #FFCC99);
 }
 .top-area {
   margin: 0px auto 10px auto;
