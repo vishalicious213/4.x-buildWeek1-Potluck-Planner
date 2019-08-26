@@ -322,15 +322,13 @@ header section .navLeft {
     border-radius: 2rem;
   }
 }
-.content-pick,
-.content-pick2 {
+.content-pick {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.content-pick .options,
-.content-pick2 .options {
+.content-pick .options {
   width: 30%;
   margin-bottom: 30px;
   display: flex;
@@ -341,35 +339,23 @@ header section .navLeft {
   border-radius: 1rem;
   border: 3px solid #CC6666;
 }
-.content-pick img,
-.content-pick2 img {
+.content-pick img {
   border-radius: 1rem;
 }
 @media (max-width: 800px) {
-  .content-pick .options,
-  .content-pick2 .options {
+  .content-pick .options {
     width: 48%;
   }
 }
 @media (max-width: 610px) {
-  .content-pick,
-  .content-pick2 {
+  .content-pick {
     border-radius: 1rem;
     flex-direction: column;
     align-items: center;
   }
-  .content-pick .options,
-  .content-pick2 .options {
+  .content-pick .options {
     width: auto;
     max-width: 90%;
-  }
-}
-.content-pick2 {
-  padding-top: 10px;
-}
-@media (max-width: 610px) {
-  .content-pick2 {
-    padding-top: 0px;
   }
 }
 footer {
