@@ -176,7 +176,7 @@ header section nav .EricTheme:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FF9966;
+  background-image: linear-gradient(#FF9966, #993366);
   padding: 2rem;
   border-radius: 1rem;
   border: 3px solid #CC6666;
@@ -223,7 +223,7 @@ footer div p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FF9966;
+  background-image: linear-gradient(#FF9966, #993366);
   padding: 2rem;
   margin: 1rem;
   border-radius: 1rem;
@@ -290,7 +290,7 @@ footer div p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FF9966;
+  background-image: linear-gradient(#FF9966, #993366);
   padding: 2rem;
   margin: 1rem;
   border-radius: 1rem;
