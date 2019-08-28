@@ -17,6 +17,9 @@ header section {
 header section div {
   margin-top: 3%;
 }
+header section div .fas {
+  color: #993366;
+}
 header section nav {
   display: flex;
   justify-content: space-evenly;
