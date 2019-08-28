@@ -4,6 +4,7 @@
 
 @headerColor: #FFCC99;
 @cardColor: #FF9966;
+@cardGradient: #FF9966, #993366;
 @footerColor: #993366;
 @gradientColor: #FFCC99, #993366;
 
@@ -141,6 +142,7 @@ header {
     }
 }//.top-area
 
+
 .text-and-login {
     display: flex;
     align-items: center;
@@ -227,7 +229,8 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: @cardColor;
+        // background-color: @cardColor;
+        background-image: linear-gradient(@cardGradient);
         padding: 2rem;
         border-radius: 1rem;
         border: 3px solid #CC6666;
@@ -288,7 +291,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: @cardColor;
+        // background-color: @cardColor;
+        background-image: linear-gradient(@cardGradient);
         padding: 2rem;
         margin: 1rem;
         border-radius: 1rem;
@@ -370,7 +374,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: @cardColor;
+        // background-color: @cardColor;
+        background-image: linear-gradient(@cardGradient);
         padding: 2rem;
         margin: 1rem;
         border-radius: 1rem;
