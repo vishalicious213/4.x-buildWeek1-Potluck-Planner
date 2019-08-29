@@ -89,6 +89,12 @@ header {
         }// nav
     }// section
 
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 3.6rem;
+        }
+    }
+
     @media @tablet {
         section {
             max-width: 790px;
@@ -160,20 +166,33 @@ header {
 
     .login-area {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         background-color: #993366;
         border: 2px solid #FF9966;
         // border-radius: 1rem;
         border-radius: 25% 5%;
         // width: 30%;
-        min-width: 25%;
+        min-width: 35%;
         // min-height: 200px;
         min-height: 5rem;
         margin-left: 2rem;
         padding-top: 3rem;
         padding-bottom: 2rem;
-        align-items: center;
-    }
+        // align-items: center;
+        justify-content: center;
+
+        .reactButtons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            // border: 1px solid red;
+        }
+
+        .mirrorButtons {
+            width: 20%;
+        }
+    }// .login-area
 
     .button {
         text-decoration: none;
@@ -199,11 +218,41 @@ header {
     .forgot {
         color: #FFCC99;
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: .5rem;
+        margin-left: .5rem;
     }
 
     .forgot:hover {
         font-weight: bold;
+    }
+
+    .mirror {
+        padding: 5px 0px 5px 0px;
+        width: 2.5rem;
+        // margin-left: 2rem;
+    }
+
+    .mirrorF {
+        // font-size: 1rem;
+        padding: 1px 0px 1px 0px;
+        width: 2rem;
+        margin-bottom: 0rem;
+        // margin-top: 1rem;
+        // margin-left: 3.5rem;
+        background-color: #993366;
+        border: 1px solid #FF9966;
+    }
+
+    @media @tablet {
+        .login-area {
+            min-width: 35%;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        .reactButtons {
+            margin-left: 2rem;
+        }
     }
 
     @media @mobile {
@@ -211,13 +260,30 @@ header {
 
         .login-area {
             width: 100%;
-            flex-direction: row;
+            flex-direction: column;
             margin-left: 0rem;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: baseline;
             border-radius: 2rem;
-        }
-    }//@media
+
+            .reactButtons {
+                // border: 1px solid red;
+                width: 90%;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+    
+                .forgot {
+                    margin: 0rem;
+                }
+            }// .reactButtons
+
+            .mirrorButtons {
+                // border: 1px solid blue;
+                margin-left: 2.5rem;
+            }
+        }// .login area
+    }//@media @mobile
 }// .text-and-login
 
 

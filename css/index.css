@@ -61,6 +61,11 @@ header section nav .EricTheme:hover {
   background-color: #FFCC99;
   border: 2px solid #FF9966;
 }
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 3.6rem;
+  }
+}
 @media (max-width: 800px) {
   header section {
     max-width: 790px;
@@ -118,16 +123,24 @@ header section nav .EricTheme:hover {
 }
 .text-and-login .login-area {
   display: flex;
-  flex-direction: column;
   background-color: #993366;
   border: 2px solid #FF9966;
   border-radius: 25% 5%;
-  min-width: 25%;
+  min-width: 35%;
   min-height: 5rem;
   margin-left: 2rem;
   padding-top: 3rem;
   padding-bottom: 2rem;
+  justify-content: center;
+}
+.text-and-login .login-area .reactButtons {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 45%;
+}
+.text-and-login .login-area .mirrorButtons {
+  width: 20%;
 }
 .text-and-login .button {
   text-decoration: none;
@@ -149,10 +162,33 @@ header section nav .EricTheme:hover {
 .text-and-login .forgot {
   color: #FFCC99;
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 .text-and-login .forgot:hover {
   font-weight: bold;
+}
+.text-and-login .mirror {
+  padding: 5px 0px 5px 0px;
+  width: 2.5rem;
+}
+.text-and-login .mirrorF {
+  padding: 1px 0px 1px 0px;
+  width: 2rem;
+  margin-bottom: 0rem;
+  background-color: #993366;
+  border: 1px solid #FF9966;
+}
+@media (max-width: 800px) {
+  .text-and-login .login-area {
+    min-width: 35%;
+  }
+  .text-and-login h2 {
+    font-size: 2.5rem;
+  }
+  .text-and-login .reactButtons {
+    margin-left: 2rem;
+  }
 }
 @media (max-width: 610px) {
   .text-and-login {
@@ -160,11 +196,23 @@ header section nav .EricTheme:hover {
   }
   .text-and-login .login-area {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 0rem;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: baseline;
     border-radius: 2rem;
+  }
+  .text-and-login .login-area .reactButtons {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .text-and-login .login-area .reactButtons .forgot {
+    margin: 0rem;
+  }
+  .text-and-login .login-area .mirrorButtons {
+    margin-left: 2.5rem;
   }
 }
 .content-pick {
